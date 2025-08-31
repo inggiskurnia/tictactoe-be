@@ -38,6 +38,9 @@ public class CreateGameUsecaseImpl implements CreateGameUsecase {
         newGame.setStatus(Status.IN_PROGRESS.getValue());
         newGame.setBoard(board);
 
-        return new CreateGameResponseDTO(gameRepository.save(newGame).getGameId());
+        Game createdGame = gameRepository.save(newGame);
+
+        return new CreateGameResponseDTO(createdGame.getGameId(), createdGame.getRowSize(), createdGame.getColSize(),
+                createdGame.getHumanMark(), createdGame.getStatus(), createdGame.getBoard());
     }
 }

@@ -13,4 +13,5 @@ public class MoveGameResponseDTO {
 
     private UUID gameId;
     private String[][] board;
+    private String status;
 }

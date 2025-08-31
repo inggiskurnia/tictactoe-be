@@ -12,4 +12,9 @@ import java.util.UUID;
 public class CreateGameResponseDTO {
 
     private UUID gameId;
+    private int rowSize;
+    private int colSize;
+    private String humanMark;
+    private String status;
+    private String[][] board;
 }

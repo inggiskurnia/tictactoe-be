@@ -6,7 +6,7 @@ import lombok.Getter;
 public enum Mark {
     X("X"),
     O("O"),
-    EMPTY("EMPTY");
+    EMPTY(" ");
 
     private final String value;
 

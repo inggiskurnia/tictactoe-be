@@ -76,7 +76,7 @@ public class Game {
             int countCol = 0;
 
             for (int j = 0; j < this.rowSize; j++) {
-                if (this.board[i][j].equals(player)) {
+                if (this.board[j][i].equals(player)) {
                     countCol++;
                     if (countCol == this.winLength) return true;
                 } else {
